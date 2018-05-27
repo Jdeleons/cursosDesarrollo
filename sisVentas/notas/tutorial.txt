@@ -1,0 +1,17 @@
+https://www.youtube.com/watch?v=OyXKttR7y6c
+primero creamos nuestra aplicacion
+
+	laravel new proyecto
+
+configuracion nuestro nombre de proyecto
+
+	php artisan app:name nombre
+
+configuramos el lenguaje de nuestro proyecto
+
+	config  app.php
+
+creamos nuestra base de datos.
+
+
+
