@@ -1,4 +1,21 @@
 https://www.youtube.com/watch?v=OyXKttR7y6c
+CREAMOS NUESTRO REPOSITORIO EN GIT HUB
+		https://github.com/Jdeleons/cursosDesarrollo.git
+		iniciando el proyecto en git:
+			si no tenemos un directorio
+			git clone para clonar el repositorio.
+
+		para iniciar el repo en lamaquina local.
+			git init
+			git add .
+			git commit -m ""
+			git remote add origin
+			git push -u origin master
+
+LO ENLAZAMOS CON SLACK PARA GESTIONAR LA COMUNICACION.
+			correo
+			contraseña
+
 primero creamos nuestra aplicacion
 
 	laravel new proyecto
@@ -12,6 +29,39 @@ configuramos el lenguaje de nuestro proyecto
 	config  app.php
 
 creamos nuestra base de datos.
+	con mysql workbench
+		dbventasLaravel
+
+luego configuramos nuestra bd de mysql en el archivo .env
+
+			colocamos nuestro datos
+
+									host
+									usuario
+									contraseña
+									base de datos
+
+CREAREMOS NUESTROS MODELOS
+	Dentro del Directorio APP
+			Usan notacion UpperCamelCase para sus nombres.
 
 
-empezando con git hub
+CREAMOS NUESTRAS RUTAS:
+	Dentro de APP/Http/routes.php
+
+	es de tipo resource para hacer un grupo de rutas de recursos.
+	Route::resource('la ruta', 'controlador');
+
+
+CREAMOS NUESTRO CONTROLADOR
+	Puede ser con los metodos
+	GET index, create, show, edit.
+	POST: store.
+	PUT: update.
+	DELETE: destroy.
+	PATH: update.
+
+	php artisan make:controller NombreControlador
+
+archivo de validacion request	
+	php artisan make:request CategoriaFromRequest
