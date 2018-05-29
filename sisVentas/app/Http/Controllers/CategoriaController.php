@@ -4,10 +4,10 @@ namespace sisVentas\Http\Controllers;
 
 use Illuminate\Http\Request;
 
-use sisVentas\Http\Request;
+use sisVentas\Http\Requests;
 use sisVentas\Categoria;
 use Illuminate\Support\Facades\Redirect;
-use sisVentas\Http\Requests\CategoriaFromRequest;
+use sisVentas\Http\Requests\CategoriaFormRequest;
 
 class CategoriaController extends Controller
 {
@@ -36,7 +36,7 @@ class CategoriaController extends Controller
 	{
 		$categoria=new Categoria;
 		$categoria->nombre=$request->get('nombre');
-		$categoria->descripcion=>$request->get('descripcion');
+		$categoria->descripcion=$request->get('descripcion');
 		$categoria->condicion='1';
 		$categoria->save();
 		return Redirect::to('almacen/categoria');
@@ -56,8 +56,8 @@ class CategoriaController extends Controller
 	public function update(CategoriaFormRequest $request, $id)
 	{
 		$categoria=Categoria::findOrFail($id);
-		$categoria->nombre=>$request->get('nombre');
-		$categoria->descripcion=>$request->get('descripcion');
+		$categoria->nombre=$request->get('nombre');
+		$categoria->descripcion=$request->get('descripcion');
 		$categoria->update();
 		return Redirect::to('almacen/categoria');
 	}
