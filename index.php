@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+   <head>
+      <meta charset="utf-8">
+      <meta http-equiv="X-UA-Compatible" content="IE=edge">
+      <meta name="viewport" content="width=device-width, initial-scale=1">
+      <title>Aprende git desde cero</title>
+
+       <!-- Bootstrap -->
+       <link href="css/bootstrap.min.css" rel="stylesheet">
+   </head>
+   <body>
+    <br>
+    <div class="container">
+       <div class="jumbotron">
+          <h1>Hola mundo</h1>
+          <p>Aprendiendo git en el blog de styde.net</p>
+          <p><a class="btn btn-primary btn-lg" href="https://styde.net" role="button">link</a></p>
+       </div>
+    </div>
+
+ 
+
+   <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+   <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.2/jquery.min.js"></script>
+   <script src="js/bootstrap.min.js"></script>
+</body>
+</html>
